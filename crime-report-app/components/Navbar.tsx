@@ -4,7 +4,7 @@ import { useState } from "react"
 //import MobileMenu
 
 export default function Navbar(){
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return(
     <>
@@ -36,8 +36,35 @@ export default function Navbar(){
                 </Link>
 
 
-                {/* Main Navigation */}
+                
               </div>
+              {/* Main Navigation */}
+              <div className="hidden md:flex items-center space-x-6">
+              <Link
+                href="/send-report"
+                className="text-sm text-zinc-400 hover:text-white transition-colors"
+              >
+                Send Report
+              </Link>
+              <Link
+                href="/track-report"
+                className="text-sm text-zinc-400 hover:text-white transition-colors"
+              >
+                Track Report
+              </Link>
+              <Link
+                href="/how-it-works"
+                className="text-sm text-zinc-400 hover:text-white transition-colors"
+              >
+                How AnonSafe Works
+              </Link>
+              <Link
+                href="/resources"
+                className="text-sm text-zinc-400 hover:text-white transition-colors"
+              >
+                Help & Resources
+              </Link>
+            </div>
          </div>
        </div>
      </nav>
